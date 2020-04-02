@@ -9,7 +9,7 @@ from pprint import pprint
 
 BUFFER_SIZE=8899
 file_l=[]
-virus_total = Virustotal("7f43443b8ed68b807037c7b76df1ae84f6bdda4587d96be332a161755751360e")
+virus_total = Virustotal("#virus_total api key")
 def hash_f():
     global ole_win
     file_hash_SHA256= hashlib.sha256()

@@ -10,7 +10,7 @@ from pprint import pprint
 BUFFER_SIZE=8899
 file_l=[]
 virus_total = Virustotal("#virus_total api key")
-def hash_f():
+def hash_to_vtotal():
     global ole_win
     file_hash_SHA256= hashlib.sha256()
     file_hash_MD5=hashlib.md5()
@@ -75,7 +75,7 @@ if sys.argv[2]=='meta':
     obtain_meta()
 else:
     detect_Macros()
-    hash_f()
+    hash_to_vtotal()
             
             
             

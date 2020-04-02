@@ -27,7 +27,6 @@ def hash_f():
         print('SHA-256:',file_hash_SHA256.hexdigest())
         print('MD5:',file_hash_MD5.hexdigest())
         meta=ole_win.get_metadata()
-        #if sys.argv[2] != None and sys.argv[2] !='meta':
         shutil.copy(file,sys.argv[2])
         print('Macro copied to',sys.argv[2])
         print(meta.dump())
